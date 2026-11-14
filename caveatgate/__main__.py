@@ -33,11 +33,11 @@ def cmd_verify(args: argparse.Namespace) -> int:
         if args.discharge:
             for p in args.discharge:
                 discharges.append(load_json(p))
+        report = verify_ticket(ticket, request, keys, policy, discharges)
     except (OSError, json.JSONDecodeError, ValueError) as e:
         print(f"load error: {e}", file=sys.stderr)
         return 2
 
-    report = verify_ticket(ticket, request, keys, policy, discharges)
     report_path = Path(args.report)
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
