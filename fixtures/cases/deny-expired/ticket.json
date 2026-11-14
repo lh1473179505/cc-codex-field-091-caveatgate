@@ -1,0 +1,24 @@
+{
+  "id": "tkt-exp",
+  "location": "https://auth.example/gate",
+  "key_id": "root-a",
+  "caveats": [
+    {
+      "type": "first",
+      "cid": "time < 2026-03-01T00:00:00Z"
+    },
+    {
+      "type": "first",
+      "cid": "method = GET"
+    },
+    {
+      "type": "first",
+      "cid": "path_prefix = /v1/"
+    },
+    {
+      "type": "first",
+      "cid": "account = ACC-9"
+    }
+  ],
+  "signature_hex": "797ef85530d425f0f8a89f8ff837715c6487648c0134bedaf72e8c0fb39ca0e9"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dis-1",
+  "location": "https://otp.example/discharge",
+  "key_id": "otp-1",
+  "caveats": [
+    {
+      "type": "first",
+      "cid": "time < 2026-04-02T00:00:00Z"
+    }
+  ],
+  "signature_hex": "ebd836492e4fe46353f94429caef3604d77030b1ac54a6123a9eef6c13d092c1",
+  "binding_hex": "1111111111111111111111111111111111111111111111111111111111111111"
+}

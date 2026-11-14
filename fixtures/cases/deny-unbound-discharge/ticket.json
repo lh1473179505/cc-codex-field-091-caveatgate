@@ -1,0 +1,30 @@
+{
+  "id": "tkt-tp",
+  "location": "https://auth.example/gate",
+  "key_id": "root-a",
+  "caveats": [
+    {
+      "type": "first",
+      "cid": "time < 2026-04-02T00:00:00Z"
+    },
+    {
+      "type": "first",
+      "cid": "method = GET"
+    },
+    {
+      "type": "first",
+      "cid": "path = /v1/orders/42"
+    },
+    {
+      "type": "first",
+      "cid": "account = ACC-9"
+    },
+    {
+      "type": "third",
+      "cid": "need-otp",
+      "vid_hex": "543b6a72dcbee1e232fae04a8ebf948cfe45183a6e61aa63d48f4d5f9e7b8bae",
+      "location": "https://otp.example/discharge"
+    }
+  ],
+  "signature_hex": "defc7f3b49b7bcd8b4de79a17f94e6ca2afa8ea5f81aea7673eb9d32d950f305"
+}

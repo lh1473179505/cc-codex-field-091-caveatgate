@@ -1,0 +1,6 @@
+{
+  "method": "GET",
+  "path": "/v1/orders/42",
+  "account": "ACC-9",
+  "now": "2026-04-01T12:00:00Z"
+}

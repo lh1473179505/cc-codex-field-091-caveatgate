@@ -1,0 +1,24 @@
+{
+  "id": "tkt-badsig",
+  "location": "https://auth.example/gate",
+  "key_id": "root-a",
+  "caveats": [
+    {
+      "type": "first",
+      "cid": "time < 2026-04-02T00:00:00Z"
+    },
+    {
+      "type": "first",
+      "cid": "method = GET"
+    },
+    {
+      "type": "first",
+      "cid": "path_prefix = /v1/"
+    },
+    {
+      "type": "first",
+      "cid": "account = ACC-9"
+    }
+  ],
+  "signature_hex": "0000000000000000000000000000000000000000000000000000000000000000"
+}

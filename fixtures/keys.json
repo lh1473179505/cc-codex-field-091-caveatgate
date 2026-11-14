@@ -1,0 +1,12 @@
+{
+  "roots": {
+    "root-a": "0123456789abcdef0123456789abcdef"
+  },
+  "discharges": {
+    "otp-1": {
+      "key_id": "otp-1",
+      "key_hex": "abcdef0123456789abcdef0123456789",
+      "location": "https://otp.example/discharge"
+    }
+  }
+}

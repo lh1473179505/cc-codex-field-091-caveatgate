@@ -1,0 +1,5 @@
+{
+  "max_caveats": 8,
+  "allowed_locations": ["https://auth.example/gate"],
+  "require_account_caveat": true
+}
